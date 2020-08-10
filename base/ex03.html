@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>ma première page avec Javascript</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="ex03.css">
+        <script src="ex03.js"></script>
+        <script>
+            function changeHeure()
+            {
+                var span = document.getElementById("horloge");
+                if (span==null) return; 
+                while (span.firstChild) span.removeChild(span.firstChild); 
+                afficheHeure();
+                setTimeout(changeHeure, 1000);
+            }
+        </script> 
+   </head>
+   <body onload="changeHeure()">
+      <main>
+         <div class="horloge">
+            <span class="data" id="horloge">
+                
+            </span>
+         </div>
+      </main>
+   <body>
+</html>
