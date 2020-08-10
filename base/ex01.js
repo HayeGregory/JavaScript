@@ -2,7 +2,7 @@ nom = "Haye"
 prenom = "Gregory"
 dateToday = new Date()
 var strDate =   dateToday.getDate() + "-" + 
-                dateToday.getMonth() + "-" +
+                (dateToday.getMonth()+1) + "-" +
                 dateToday.getFullYear();
 
 function afficherDocumentWrite() {
