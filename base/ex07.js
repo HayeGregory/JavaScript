@@ -15,7 +15,7 @@ function printFactures() {
         // data & calcul 
         client = factures[i][0];
         dateCmd = factures[i][1];
-        total_HTVA = total_TVA = total_TVAC = 0
+        total_HTVA = total_TVA = total_TVAC = 0;
 
         // dom
         // info client - date commande
@@ -23,7 +23,7 @@ function printFactures() {
         tr.setAttribute("class", "title");
         var td = tr.appendChild(document.createElement("td"));
         td.setAttribute("colspan", "6");
-        td.appendChild(document.createTextNode(`Client : ${client} - Date de la commande : ${dateCmd}`))
+        td.appendChild(document.createTextNode(`Client : ${client} - Date de la commande : ${dateCmd}`));
 
         // info titre colonne produit
         var tr = table.appendChild(document.createElement("tr"));

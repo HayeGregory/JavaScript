@@ -14,6 +14,8 @@ function afficherMessageAccueil() {
         salutation = "Bonne aprem"
     } else if (HH >= 6) {
         salutation = "Bonjour"
+    } else {
+        salutation = "Bonne nuit (apres minuit)"
     }
     
     message = `${salutation}, il est ${HH}:${MM} !`; // console.log(message);
