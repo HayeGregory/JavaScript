@@ -3,7 +3,6 @@ function printTableColors(idDiv, b) {
     var tableColor = divColorPick.appendChild(document.createElement("table"));
     var gap = 16;
 
-    //divColorPick.appendChild(tableColor);
     for(var i = 0; i < (256/gap); i++) {
         var tr = tableColor.appendChild(document.createElement("tr"));
         
