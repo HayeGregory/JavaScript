@@ -18,4 +18,5 @@ function afficheHeure() {
 
 
     console.log(separator.textContent);
+    console.log(`il est  : ${now}`)
 }
