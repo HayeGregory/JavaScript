@@ -38,7 +38,7 @@ function afficher(colorSlideDiv, colorPickDiv) {
             return function() { 
                 printTableColors(colorPickDiv, bleu) 
             }; 
-        }(nuanceBleu);
+        }(255-nuanceBleu);
 
         //td.onclick = printTableColors(colorPickDiv, nuanceBleu); 
             
